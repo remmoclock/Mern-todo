@@ -1,0 +1,12 @@
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const mongoose = require("mongoose");
+
+app.use(cors());
+
+app.get("/", function (req, res) {
+  res.send("Hello World");
+});
+
+app.listen(3000);
